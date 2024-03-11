@@ -1,5 +1,6 @@
 import { NextPage } from "next";
-import { IGravatarProfile } from "./types";
+import { IGravatarData, IGravatarProfile } from "./types";
+import { Avatar, Container, Typography } from "@mui/material";
 
 interface IPageProps {}
 
@@ -17,9 +18,27 @@ const getData = async () => {
 };
 
 const Home: NextPage<IPageProps> = async () => {
-  const data: IGravatarProfile = await getData();
-
-  return <div>{data.entry[0].full_name}</div>;
+  const data: IGravatarData = await getData();
+  const profile: IGravatarProfile | undefined = data.entry[0];
+  return (
+    <Container maxWidth="md">
+      <Typography variant="h3" className="mb-4">
+        {data.entry[0].full_name}
+      </Typography>
+      <Avatar alt={profile.full_name} src={profile.thumbnailUrl} />
+      <Typography variant="body1">
+        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+        eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
+        voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
+        clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit
+        amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+        nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
+        sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
+        rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem
+        ipsum dolor sit amet.
+      </Typography>
+    </Container>
+  );
 };
 
 export default Home;
