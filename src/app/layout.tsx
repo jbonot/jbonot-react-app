@@ -1,5 +1,11 @@
+// system imports
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+
+// internal imports
+import { Layout } from "./components/Layout";
+
+// styling
 import "./globals.css";
 
 import "@fontsource/roboto/300.css";
@@ -21,7 +27,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <Layout>{children}</Layout>
+      </body>
     </html>
   );
 }
