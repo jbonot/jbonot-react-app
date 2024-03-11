@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>My Blog</title>
+    <link>https://www.example.com/blog</link>
+    <description>Welcome to My Blog - where you can find all the latest updates!</description>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 10 Mar 2024 12:00:00 GMT</lastBuildDate>
+    <item>
+      <title>Post 1: Introduction to My Blog</title>
+      <link>https://www.example.com/blog/post-1</link>
+      <pubDate>Thu, 10 Mar 2024 10:00:00 GMT</pubDate>
+      <description>This is the first post on my blog, introducing what topics I'll cover and what readers can expect.</description>
+    </item>
+    <item>
+      <title>Post 2: Tips for Writing Great Blog Posts</title>
+      <link>https://www.example.com/blog/post-2</link>
+      <pubDate>Wed, 09 Mar 2024 10:00:00 GMT</pubDate>
+      <description>In this post, I share some tips and best practices for writing engaging and informative blog posts.</description>
+    </item>
+    <!-- Additional blog posts go here -->
+  </channel>
+</rss>

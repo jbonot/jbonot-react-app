@@ -25,3 +25,21 @@ export interface IGravatarProfile {
     value: string;
   }[];
 }
+
+export interface IBlogEntry {
+  title: string;
+  link: string;
+  pubDate: string;
+  content: string;
+  contentSnippet: string;
+  isoDate: string;
+}
+
+export interface IBlog {
+  items: IBlogEntry[];
+  title: string;
+  description: string;
+  link: string;
+  language: string;
+  lastBuildDate: string;
+}

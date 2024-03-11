@@ -19,7 +19,8 @@
     "prettier": "^3.2.5",
     "prettier-eslint": "^16.3.0",
     "react": "^17.0.0 || ^18.0.0",
-    "react-dom": "^17.0.0 || ^18.0.0"
+    "react-dom": "^17.0.0 || ^18.0.0",
+    "rss-parser": "^3.13.0"
   },
   "devDependencies": {
     "@types/node": "^20",
