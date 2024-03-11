@@ -3,12 +3,25 @@ import {
   AppBar,
   Box,
   Button,
+  Divider,
   IconButton,
+  Link,
+  List,
+  ListItem,
+  ListItemButton,
+  ListItemText,
   Toolbar,
   Typography
 } from "@mui/material";
 import { Menu } from "@mui/icons-material";
 import React from "react";
+
+const navItems = [
+  {
+    title: "Blog",
+    url: "/blog"
+  }
+];
 
 interface ILayoutProps {
   //
@@ -30,9 +43,19 @@ export const Layout = ({
           >
             <Menu />
           </IconButton>
-          <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-            News
+          <Typography variant="h6" component="a" href="/" sx={{ flexGrow: 1 }}>
+            My Portfolio
           </Typography>
+          <Divider />
+          <List>
+            {navItems.map((item) => (
+              <ListItem key={item.url} disablePadding>
+                <ListItemButton sx={{ textAlign: "center" }} href={item.url}>
+                  <ListItemText primary={item.title} />
+                </ListItemButton>
+              </ListItem>
+            ))}
+          </List>
         </Toolbar>
       </AppBar>
       {children}

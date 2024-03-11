@@ -35,7 +35,7 @@ const Blog: NextPage = async () => {
         {data.title}
       </Typography>
       {data.items.map((entry) => {
-        return <BlogPreview data={entry} />;
+        return <BlogPreview key={entry.link} data={entry} />;
       })}
     </Container>
   );
