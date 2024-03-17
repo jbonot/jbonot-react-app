@@ -1,5 +1,5 @@
 import { NextPage } from "next";
-import { IGravatarData, IGravatarProfile } from "./types";
+import { IGravatarData, IGravatarProfile } from "../types";
 import { Avatar, Container, Typography } from "@mui/material";
 
 interface IPageProps {}

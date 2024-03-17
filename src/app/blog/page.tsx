@@ -5,7 +5,7 @@ import Parser from "rss-parser";
 
 // internal imports
 import { BlogPreview } from "../../components/BlogPreview";
-import { IBlog } from "../types";
+import { IBlog } from "../../types";
 
 const getData = async () => {
   const url = process.env.BLOG_FEED_URL;

@@ -27,12 +27,14 @@ export interface IGravatarProfile {
 }
 
 export interface IBlogEntry {
-  title: string;
-  link: string;
-  pubDate: string;
+  categories: string[];
   content: string;
   contentSnippet: string;
+  creator: string;
   isoDate: string;
+  link: string;
+  pubDate: string;
+  title: string;
 }
 
 export interface IBlog {

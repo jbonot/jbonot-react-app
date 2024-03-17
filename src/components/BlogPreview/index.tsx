@@ -3,7 +3,7 @@ import { Box, Typography } from "@mui/material";
 import React from "react";
 
 // internal imports
-import { IBlogEntry } from "@/app/types";
+import { IBlogEntry } from "@/types";
 
 interface IBlogPreviewProps {
   data: IBlogEntry;
