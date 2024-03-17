@@ -8,7 +8,7 @@ import { BlogPreview } from "../../components/BlogPreview";
 import { IBlog } from "../../types";
 
 const getData = async () => {
-  const url = process.env.BLOG_FEED_URL;
+  const url = process.env.BLOG_FEED_URL_LOCAL;
   let feed: IBlog | null = null;
 
   if (url) {
@@ -35,10 +35,10 @@ const Blog: NextPage = async () => {
         {data.title}
       </Typography>
       <Grid container spacing={2}>
-        {data.items.map((entry) => {
+        {data.items.map((entry, index) => {
           return (
-            <Grid item md={3}>
-              <BlogPreview key={entry.link} data={entry} />
+            <Grid item md={3} sm={4} xs={6}>
+              <BlogPreview key={entry.link} data={entry} index={index} />
             </Grid>
           );
         })}
