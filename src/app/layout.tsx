@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 
 // internal imports
-import { Layout } from "./components/Layout";
+import { Layout } from "../components/Layout";
 
 // styling
 import "./globals.css";

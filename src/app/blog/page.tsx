@@ -4,7 +4,7 @@ import { Container, Typography } from "@mui/material";
 import Parser from "rss-parser";
 
 // internal imports
-import { BlogPreview } from "../components/BlogPreview";
+import { BlogPreview } from "../../components/BlogPreview";
 import { IBlog } from "../types";
 
 const getData = async () => {
