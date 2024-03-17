@@ -1,6 +1,6 @@
 // system imports
 import { NextPage } from "next";
-import { Container, Typography } from "@mui/material";
+import { Container, Grid, Typography } from "@mui/material";
 import Parser from "rss-parser";
 
 // internal imports
@@ -34,9 +34,15 @@ const Blog: NextPage = async () => {
       <Typography variant="h3" className="mb-4">
         {data.title}
       </Typography>
-      {data.items.map((entry) => {
-        return <BlogPreview key={entry.link} data={entry} />;
-      })}
+      <Grid container spacing={2}>
+        {data.items.map((entry) => {
+          return (
+            <Grid item md={3}>
+              <BlogPreview key={entry.link} data={entry} />
+            </Grid>
+          );
+        })}
+      </Grid>
     </Container>
   );
 };
