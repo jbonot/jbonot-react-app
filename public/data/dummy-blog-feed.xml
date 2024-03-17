@@ -11,12 +11,14 @@
       <link>https://www.example.com/blog/post-1</link>
       <pubDate>Thu, 10 Mar 2024 10:00:00 GMT</pubDate>
       <description>This is the first post on my blog, introducing what topics I'll cover and what readers can expect.</description>
+      <dc:creator>Max Mustermann</dc:creator>
     </item>
     <item>
       <title>Post 2: Tips for Writing Great Blog Posts</title>
       <link>https://www.example.com/blog/post-2</link>
       <pubDate>Wed, 09 Mar 2024 10:00:00 GMT</pubDate>
       <description>In this post, I share some tips and best practices for writing engaging and informative blog posts.</description>
+      <dc:creator>Max Mustermann</dc:creator>
     </item>
     <!-- Additional blog posts go here -->
   </channel>
