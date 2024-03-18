@@ -23,8 +23,11 @@ const getData = async () => {
 };
 
 const Blog: NextPage = async () => {
+  // Vars & States - START
   const data = await getData();
+  // Vars & States - END
 
+  // Render - START
   if (!data) {
     return <Container maxWidth="md">Data not found</Container>;
   }
@@ -45,6 +48,7 @@ const Blog: NextPage = async () => {
       </Grid>
     </Container>
   );
+  // Render - END
 };
 
 export default Blog;

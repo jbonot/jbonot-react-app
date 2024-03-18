@@ -14,6 +14,7 @@ export const BlogPreview: React.FC<IBlogPreviewProps> = ({
   data,
   index
 }): JSX.Element => {
+  // Render - START
   return (
     <Box className="pb-2 mb-2">
       <div className="mb-2">
@@ -28,4 +29,5 @@ export const BlogPreview: React.FC<IBlogPreviewProps> = ({
       <Typography variant="body1">{data.creator}</Typography>
     </Box>
   );
+  // Render - END
 };

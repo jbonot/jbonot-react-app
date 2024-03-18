@@ -28,6 +28,7 @@ interface ILayoutProps {
 export const Layout = ({
   children
 }: React.PropsWithChildren<ILayoutProps>): JSX.Element => {
+  // Render - START
   return (
     <Box sx={{ flexGrow: 1 }}>
       <AppBar position="static">
@@ -59,4 +60,5 @@ export const Layout = ({
       {children}
     </Box>
   );
+  // Render - END
 };

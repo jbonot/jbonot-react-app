@@ -18,8 +18,12 @@ const getData = async () => {
 };
 
 const Home: NextPage<IPageProps> = async () => {
+  // Vars & States - START
   const data: IGravatarData = await getData();
   const profile: IGravatarProfile | undefined = data.entry[0];
+  // Vars & States - END
+
+  // Render - START
   return (
     <Container maxWidth="md">
       <Typography variant="h3" className="mb-4">
@@ -39,6 +43,7 @@ const Home: NextPage<IPageProps> = async () => {
       </Typography>
     </Container>
   );
+  // Render - END
 };
 
 export default Home;
